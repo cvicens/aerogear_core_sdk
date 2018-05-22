@@ -1,0 +1,19 @@
+name: aerogear_core_sdk
+description: Unofficial flutter plugin for Aerogear Core (https://github.com/aerogear)
+version: 0.0.1
+author: Carlos Vicens <carlos.vicens.alonso@gmail.com>
+homepage: https://github.com/cvicens/aerogear_core_sdk
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+# The following section is specific to Flutter.
+flutter:
+  plugin:
+    androidPackage: com.redhat.aerogearcoresdk
+    pluginClass: AerogearCoreSdkPlugin
+
+environment:
+  sdk: ">=2.0.0-dev.28.0 <3.0.0"
+  flutter: ">=0.1.4 <2.0.0"

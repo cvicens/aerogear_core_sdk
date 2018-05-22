@@ -1,0 +1,38 @@
+{
+    "version": 1,
+    "clusterName": "https://192.168.99.100:8443",
+    "namespace": "gramola",
+    "clientId": "gramola-ios",
+    "services": [
+                 {
+                 "id": "keycloak-gramola-ios-public",
+                 "name": "dh-keycloak-apb-bz8gt",
+                 "type": "Keycloak",
+                 "url": "https://keycloak-gramola.192.168.99.100.nip.io/auth",
+                 "config": {
+                 "auth-server-url": "https://keycloak-gramola.192.168.99.100.nip.io/auth",
+                 "confidential-port": 0,
+                 "public-client": true,
+                 "realm": "gramola",
+                 "resource": "gramola-ios-public",
+                 "ssl-required": "external"
+                 }
+                 },
+                 {
+                 "id": "metrics-gramola-ios",
+                 "name": "metrics",
+                 "type": "metrics",
+                 "url": "https://aerogear-app-metrics-gramola.192.168.99.100.nip.io/metrics",
+                 "config": {}
+                 },
+                 {
+                 "id": "wine-pairing-gramola-ios",
+                 "name": "wine-pairing",
+                 "type": "Custom Runtime Connector",
+                 "url": "https://z-pairing-gramola.192.168.99.100.nip.io/",
+                 "config": {
+                        "example": "foodType=FISH"
+                    }
+                 }
+                 ]
+}

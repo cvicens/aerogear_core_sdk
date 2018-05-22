@@ -1,0 +1,38 @@
+PODS:
+  - aerogear_core_sdk (0.0.1):
+    - AGSCore
+    - Flutter
+  - AGSCore (0.2.2):
+    - Alamofire (~> 4.0)
+    - XCGLogger (~> 6.0)
+  - Alamofire (4.7.2)
+  - Flutter (1.0.0)
+  - ObjcExceptionBridging (1.0.1):
+    - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
+  - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
+  - XCGLogger (6.0.2):
+    - XCGLogger/Core (= 6.0.2)
+  - XCGLogger/Core (6.0.2):
+    - ObjcExceptionBridging
+
+DEPENDENCIES:
+  - aerogear_core_sdk (from `Pods/.symlinks/plugins/aerogear_core_sdk/ios`)
+  - Flutter (from `Pods/.symlinks/flutter/ios`)
+
+EXTERNAL SOURCES:
+  aerogear_core_sdk:
+    :path: Pods/.symlinks/plugins/aerogear_core_sdk/ios
+  Flutter:
+    :path: Pods/.symlinks/flutter/ios
+
+SPEC CHECKSUMS:
+  aerogear_core_sdk: e9dff76982412034c3043682814c890d24d37f6f
+  AGSCore: e904d52de94f2d5be3a5f57182359cadfc9466de
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
+  ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
+  XCGLogger: c9601cae9a8912de34a58666ba931ed3d624dd31
+
+PODFILE CHECKSUM: c2762ce8317a0e5ab011483b2ae931fa1509d6a6
+
+COCOAPODS: 1.4.0
