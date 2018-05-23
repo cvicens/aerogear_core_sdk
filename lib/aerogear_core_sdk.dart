@@ -9,11 +9,6 @@ class AerogearCoreSdk {
   static const MethodChannel _channel =
       const MethodChannel('aerogear_core_sdk');
 
-  static Future<String> get platformVersion async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
-    return version;
-  }
-
   /// This function returns the actual Cloud App URL associated with the connection tag
   static Future<MobileService> getConfiguration (String serviceType) async { 
     final Map<dynamic, dynamic> result = await _channel.invokeMethod('getConfiguration', serviceType);
