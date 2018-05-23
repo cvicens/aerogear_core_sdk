@@ -1,6 +1,6 @@
 name: aerogear_core_sdk
 description: Unofficial flutter plugin for Aerogear Core (https://github.com/aerogear)
-version: 0.0.1
+version: 0.0.2
 author: Carlos Vicens <carlos.vicens.alonso@gmail.com>
 homepage: https://github.com/cvicens/aerogear_core_sdk
 

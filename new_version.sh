@@ -1,4 +1,4 @@
-export LIB_VERSION="v0.0.1"
+export LIB_VERSION="v0.0.2"
 git commit -a -m "pushing new release comments at CHANGLELOG.md"
 git tag -a ${LIB_VERSION} -m "version ${LIB_VERSION}"
 git push origin master ${LIB_VERSION}

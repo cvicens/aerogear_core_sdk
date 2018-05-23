@@ -1,38 +1,46 @@
 {
-    "version": 1,
-    "clusterName": "https://192.168.99.100:8443",
-    "namespace": "gramola",
-    "clientId": "gramola-ios",
+    "version": 1.0,
+    "clusterName": "192.168.64.74:8443",
+    "namespace": "myproject",
+    "clientId": "example_client_id",
     "services": [
-                 {
-                 "id": "keycloak-gramola-ios-public",
-                 "name": "dh-keycloak-apb-bz8gt",
-                 "type": "Keycloak",
-                 "url": "https://keycloak-gramola.192.168.99.100.nip.io/auth",
-                 "config": {
-                 "auth-server-url": "https://keycloak-gramola.192.168.99.100.nip.io/auth",
-                 "confidential-port": 0,
-                 "public-client": true,
-                 "realm": "gramola",
-                 "resource": "gramola-ios-public",
-                 "ssl-required": "external"
-                 }
-                 },
-                 {
-                 "id": "metrics-gramola-ios",
-                 "name": "metrics",
-                 "type": "metrics",
-                 "url": "https://aerogear-app-metrics-gramola.192.168.99.100.nip.io/metrics",
-                 "config": {}
-                 },
-                 {
-                 "id": "wine-pairing-gramola-ios",
-                 "name": "wine-pairing",
-                 "type": "Custom Runtime Connector",
-                 "url": "https://z-pairing-gramola.192.168.99.100.nip.io/",
-                 "config": {
-                        "example": "foodType=FISH"
-                    }
-                 }
-                 ]
+    {
+        "id": "keycloak",
+        "name": "keycloak",
+        "type": "keycloak",
+        "url": "https://keycloak.security.feedhenry.org/auth",
+         "config": {
+             "auth-server-url": "https://keycloak.security.feedhenry.org/auth",
+             "realm": "secure-app",
+             "resource": "client-app",
+             "ssl-required": "external"
+         }
+    },
+    {
+        "id": "cloud-service",
+        "name": "Cloud Service",
+        "type": "cloud",
+        "url": "https://www.mocky.io/v2/5b0591703200000a2aebf985",
+        "config": {}
+    },
+    {
+         "id": "metrics",
+         "name": "metrics",
+         "type": "metrics",
+         "url": "https://www.mocky.io/v2/5aa696133100001335e716e0",
+         "config": {}
+    },
+    {
+        "id": "push",
+        "name": "push",
+        "type": "push",
+        "url": "https://ups-dm-myproject-1.193b.starter-ca-central-1.openshiftapps.com/",
+        "config": {
+            "ios": {
+                "variantId": "f85015b4-a762-49a7-a36f-34a451f819a4",
+                "variantSecret": "978b35d6-7058-43b4-8c37-4dc30022ebda"
+            }
+        }
+    }
+    ]
 }

@@ -2,7 +2,7 @@ PODS:
   - aerogear_core_sdk (0.0.1):
     - AGSCore
     - Flutter
-  - AGSCore (0.2.2):
+  - AGSCore (0.3.0):
     - Alamofire (~> 4.0)
     - XCGLogger (~> 6.0)
   - Alamofire (4.7.2)
@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   aerogear_core_sdk: e9dff76982412034c3043682814c890d24d37f6f
-  AGSCore: e904d52de94f2d5be3a5f57182359cadfc9466de
+  AGSCore: fbdc5c612844589c853494962fcdce6bffabcd4f
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Flutter: 9d0fac939486c9aba2809b7982dfdbb47a7b0296
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001

@@ -19,6 +19,7 @@ A new flutter plugin project.
   s.ios.deployment_target = '9.0'
 
   # Feedhenry POD
+  #s.dependency "AGSCore", '~> 0.3'
   s.dependency "AGSCore"
 
 end
